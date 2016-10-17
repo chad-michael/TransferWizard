@@ -1,0 +1,196 @@
+﻿/****************************
+ ****  HTML Tag styles   ****
+ ****************************/
+ 
+body {
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+h1 {
+    font-family: Arial;
+    font-size: 15pt;
+    color: #025239;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+/****************************
+ ***  School List styles   **
+ ****************************/
+
+#schools ul {
+    margin: 0;
+    padding: 0;
+}
+#schools li {
+    margin: 2px 0;
+    padding: 2px;
+    width: 300px;
+}
+#schools li a,
+#schools li a:link,
+#schools li a:active,
+#schools li a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+#schools li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+#schools li.highlight {
+    background: #FEFFAF;
+}
+#schools .SchoolName input {
+    width: 200px;
+    font-size: 9pt;
+    font-family: Tahoma;
+}
+#schools .Website input {
+    width: 350px;
+    font-size: 9pt;
+    font-family: Tahoma;
+}
+
+
+/****************************
+ ****  Alphabet styles   ****
+ ****************************/
+ 
+#alphabet .table {
+    border-collapse: collapse;
+}
+#alphabet .cell, #alphabet .selected, #alphabet .unavailable {
+    border: 1px solid #c0c0c0;
+}
+#alphabet .cell a,
+#alphabet .cell a:link,
+#alphabet .cell a:visited,
+#alphabet .cell a:active {
+    color: #000000;
+    background: #FFFFFF;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#alphabet .cell a:hover {
+    background: #558458;
+    color: #FFFFFF;
+}
+#alphabet .selected a {
+    background: #025239;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#alphabet .unavailable {
+    color: #c0c0c0;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+/****************************
+ ****  GridView styles   ****
+ ****************************/
+
+.GridView_Footer {
+}
+.GridView_Empty {
+}
+.GridView_Row {
+    background-color: #fff;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Row td {
+    padding: 6px 10px;
+    border: 0px;
+}
+.GridView_Edit {
+    border: solid 1px #c0c0c0;
+    background-color: #558458;
+}
+.GridView_Edit td {
+    padding: 6px 10px;
+}
+.GridView_Edit a {
+    color: #FFFFFF;
+}
+.GridView_Selected {
+}
+.GridView_Pager {
+    background-color: #025239;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Pager td {
+    text-align: center;
+}
+.GridView_Pager td td {
+    padding: 0px 0px;
+    color: #5AA75A;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+.GridView_Pager td a {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.GridView_Header {
+    color: #FFFFFF;
+    background-color: #025239;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Header th {
+    padding: 6px 10px;
+}
+.GridView_Header th img {
+    padding: 0 0 0 5px;
+}
+#content.GridView_Header th a {
+    text-decoration: none;
+}
+#content.GridView_Header a {
+    color: #fff;
+    
+}
+#content .GridView_Header a:link {
+    color: #fff;
+    text-decoration: none;
+}
+#content .GridView_Header a:visted {
+    color: #fff;
+}
+#content .GridView_Header a:hover {
+    color: yellow;
+}
+#content .GridView_Header a:active {
+    color: yellow;
+}
+.GridView_Alt {
+    background-color: #dce3f1;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Alt td {
+    padding: 6px 10px;
+    border: 0px;
+}
+.GridView_Alt td a, .GridView_Row td a {
+    color: #0000FF;
+}
+
+
+
+/****************************
+ ***  Link button styles  ***
+ ****************************/
+ 
+.lnkExternal {
+    background: url('../images/link.png') no-repeat 0 0;
+    padding: 0 0 0 20px;
+    color: #0000FF;
+}

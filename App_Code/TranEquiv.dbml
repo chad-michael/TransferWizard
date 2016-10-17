@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TranEquiv2" Class="TranEquivDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=SQL;Initial Catalog=TranEquiv2;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TranEquivConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DeltaCourses" Member="DeltaCourses">
+    <Type Name="DeltaCourse">
+      <Column Name="CourseNumber" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="LineItemID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="LineItem_DeltaCourse" Member="LineItem" ThisKey="LineItemID" OtherKey="LineItemID" Type="LineItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TransferCourses" Member="TransferCourses">
+    <Type Name="TransferCourse">
+      <Column Name="CourseNumber" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="LineItemID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="LineItem_TransferCourse" Member="LineItem" ThisKey="LineItemID" OtherKey="LineItemID" Type="LineItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Departments" Member="Departments">
+    <Type Name="Department">
+      <Column Name="DepartmentID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DepartmentName" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Association Name="Department_LineItem" Member="LineItems" ThisKey="DepartmentID" OtherKey="DepartmentID" Type="LineItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LineItems" Member="LineItems">
+    <Type Name="LineItem">
+      <Column Name="LineItemID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TransferCredits" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="SchoolID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DeltaCredits" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="LineItem_DeltaCourse" Member="DeltaCourses" ThisKey="LineItemID" OtherKey="LineItemID" Type="DeltaCourse" />
+      <Association Name="LineItem_TransferCourse" Member="TransferCourses" ThisKey="LineItemID" OtherKey="LineItemID" Type="TransferCourse" />
+      <Association Name="Department_LineItem" Member="Department" ThisKey="DepartmentID" OtherKey="DepartmentID" Type="Department" IsForeignKey="true" />
+      <Association Name="School_LineItem" Member="School" ThisKey="SchoolID" OtherKey="SchoolID" Type="School" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Schools" Member="Schools">
+    <Type Name="School">
+      <Column Name="SchoolID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SchoolName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MappedName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="School_LineItem" Member="LineItems" ThisKey="SchoolID" OtherKey="SchoolID" Type="LineItem" />
+    </Type>
+  </Table>
+  <Function Name="dbo.AvailableSchoolLetters" Method="AvailableSchoolLetters">
+    <ElementType Name="AvailableSchoolLettersResult">
+      <Column Name="Letter" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DepartmentsForSchoolTransfers" Method="DepartmentsForSchoolTransfers">
+    <Parameter Name="SchoolID" Parameter="schoolID" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="DepartmentsForSchoolTransfersResult">
+      <Column Name="DepartmentID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DepartmentName" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetCourseID" Method="GetCourseID">
+    <Parameter Name="CourseName" Parameter="courseName" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="GetCourseIDResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
