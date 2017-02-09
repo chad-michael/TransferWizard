@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Delta_3Col_Inner.master.cs" Inherits="Delta_3Col_Inner" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Delta College</title>
+    <%--    <link href="../packages/bootstrap.3.3.7/content/Content/bootstrap.css" rel="stylesheet" />
+    <link href="../packages/FontAwesome.4.6.3/Content/Content/font-awesome.css" rel="stylesheet" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <table class="PageBoundingBox">
+            <tr>
+                <td>
+
+                    <!-- Begin Content Area -->
+                    <table class="ContentBoundingBox">
+                        <tr>
+
+                            <td class="MainContent">
+                                <div id="MainContentdiv">
+                                    <div id="content">
+                                        <asp:ContentPlaceHolder runat="server" ID="contentMain"></asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- END MAIN Column Content Area -->
+                        </tr>
+                    </table>
+                    <!-- End Content Area -->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

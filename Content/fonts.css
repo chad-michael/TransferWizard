@@ -1,0 +1,53 @@
+﻿/**
+ * @license
+ * MyFonts Webfont Build ID 3203708, 2016-04-13T12:19:20-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: TrendSlabOne by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/trend/slab-one/
+ * Copyright: Copyright (c) 2012 by Daniel Hernandez &amp; Paula nazal. All rights reserved.
+ * Licensed pageviews: 500,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3203708
+ *
+ * © 2016 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30e27c");
+
+/*Myriad-Pro*/
+@font-face {
+    font-family: 'myriad-pro';
+    src: url('../fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
+/*Italic*/
+@font-face {
+    font-family: 'myriad-pro-italic';
+    src: url('../fonts/MyriadPro-Bold.otf') format('opentype');
+}
+
+/*Semi-Bold*/
+@font-face {
+    font-family: 'myriad-pro-semiBold';
+    src: url('../fonts/MyriadPro-SemiBold.otf') format('opentype');
+}
+
+/*Bold*/
+@font-face {
+    font-family: 'myriad-pro-Bold';
+    src: url('../fonts/MyriadPro-Bold.otf') format('opentype');
+}
+
+/*TrendSlabOne*/
+@font-face {
+    font-family: 'TrendSlabOne';
+    src: url('../fonts/TrendSlabOne.otf') format('opentype');
+}
