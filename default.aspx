@@ -1,1 +1,0 @@
-<% Response.Redirect("UpdatedSchoolList.aspx") %>
