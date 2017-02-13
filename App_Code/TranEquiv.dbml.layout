@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TranEquiv">
+  <DataContextMoniker Name="/TranEquivDataContext" />
+  <nestedChildShapes>
+    <classShape Id="180bc604-d709-4fc8-aecb-ef8bf4653336" absoluteBounds="6.25, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TranEquivDataContext/DeltaCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="182fd488-28b6-4c9e-909b-426a2ee6c54a" absoluteBounds="6.265, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc703ca0-a3b3-4e3f-afef-93bfd20065a6" absoluteBounds="6.25, 3, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/TranEquivDataContext/TransferCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f73c5fb8-9c8f-46b5-8ce1-543c3ce3dfca" absoluteBounds="6.265, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cea5adb0-cfc8-4c8d-9eb5-2f3ac9c1938a" absoluteBounds="0.75, 2.125, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/TranEquivDataContext/Department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="def621b8-8521-4dd2-8e9f-e2700e2a889f" absoluteBounds="0.765, 2.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24944d3a-b878-43dc-b701-e9468c684bb8" absoluteBounds="3.5, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TranEquivDataContext/LineItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a499a49-e649-4de9-8ea3-ab267e25222a" absoluteBounds="3.515, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1294dcc-ba37-4965-aa42-1b12a54ba132" absoluteBounds="0.75, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TranEquivDataContext/School" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17c1f2aa-134a-4f5a-9d31-cc1068b241a4" absoluteBounds="0.765, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.06775024414063); (6.25 : 2.06775024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TranEquivDataContext/LineItem/LineItem_DeltaCourse" />
+      <nodes>
+        <classShapeMoniker Id="24944d3a-b878-43dc-b701-e9468c684bb8" />
+        <classShapeMoniker Id="180bc604-d709-4fc8-aecb-ef8bf4653336" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.23209757486979); (6.25 : 3.23209757486979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TranEquivDataContext/LineItem/LineItem_TransferCourse" />
+      <nodes>
+        <classShapeMoniker Id="24944d3a-b878-43dc-b701-e9468c684bb8" />
+        <classShapeMoniker Id="bc703ca0-a3b3-4e3f-afef-93bfd20065a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.67307657877604); (3.5 : 2.67307657877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TranEquivDataContext/Department/Department_LineItem" />
+      <nodes>
+        <classShapeMoniker Id="cea5adb0-cfc8-4c8d-9eb5-2f3ac9c1938a" />
+        <classShapeMoniker Id="24944d3a-b878-43dc-b701-e9468c684bb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.33742390950521); (4.5 : 4.33742390950521); (4.5 : 3.46419514973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TranEquivDataContext/School/School_LineItem" />
+      <nodes>
+        <classShapeMoniker Id="a1294dcc-ba37-4965-aa42-1b12a54ba132" />
+        <classShapeMoniker Id="24944d3a-b878-43dc-b701-e9468c684bb8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

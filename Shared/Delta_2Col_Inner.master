@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Delta_2Col_Inner.master.cs" Inherits="Delta_2Col_Inner" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Delta College</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <table class="PageBoundingBox">
+            <tr>
+                <td>
+                    <!-- Begin Content Area -->
+                    <table class="ContentBoundingBox">
+                        <tr>
+
+                            <td class="MainContent">
+
+                                <div id="MainContentdiv">
+                                    <div style="padding-left: 10px; padding-right: 10px;" id="content">
+                                        <asp:ContentPlaceHolder runat="server" ID="contentMain"></asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </td>
+                            <!-- END MAIN Column Content Area -->
+                        </tr>
+                    </table>
+                    <!-- End Content Area -->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

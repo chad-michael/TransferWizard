@@ -1,0 +1,785 @@
+﻿/*-----------------------------------------------------------------------------
+Master Style Sheet
+
+version:   1.0
+author:    Chad Michael
+email:     chadmichael@delta.edu
+website:   www.delta.edu
+date:      11/16/2016
+
+Copyright 2016 Delta College - All Rights Reserved
+-----------------------------------------------------------------------------*/
+
+/* -- cm -- */
+
+body {
+    display: block;
+    margin: 0;
+}
+
+    /** safari hack for img **/
+    body > div > div > a > img {
+        position: fixed;
+        top: 2rem;
+        /*transform: translate(-50%, -50%);*/
+        max-width: 90%;
+        max-height: 90%;
+        left: 13.2rem;
+    }
+
+#content > div > div.main {
+    margin-left: 200px;
+    margin-right: auto;
+    margin-bottom: 0;
+    min-height: 450px;
+}
+
+    #content > div > div.main:after {
+        content: "";
+        display: block;
+    }
+
+#ctl00_ctl00_contentMain_contentMain_btnSearch {
+    margin-right: 70em;
+}
+
+.ddRow > div:nth-child(3) {
+    clear: both;
+    float: left;
+    margin: auto;
+}
+/***** Headings *****/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00704a;
+    font-weight: normal !important;
+}
+
+h1 {
+    font-family: TrendSlabOne;
+    color: #00704a !important;
+    letter-spacing: -2px;
+    font-size: 36px !important;
+    line-height: 39.6px;
+    font-weight: 700;
+    height: 39.6px;
+    -webkit-text-fill-color: rgb(0, 112, 74);
+    -webkit-text-stroke-color: rgb(0, 112, 74);
+    -webkit-text-stroke-width: 0px;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: TrendSlabOne;
+    /*font-family: TrendSlabOne-30E27A_0_0EOT;*/
+    letter-spacing: -3.2px;
+    color: #7ac142 !important;
+    line-height: 38.4px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: TrendSlabOne;
+    /*font-family: TrendSlabOne-30E27A_0_0EOT;*/
+    font-size: 12pt !important;
+    letter-spacing: -.2rem !important;
+    /*line-height: 1.4 !important;*/
+    color: #00704a !important;
+}
+
+p {
+    font-size: 12pt !important;
+    /*line-height: 2rem !important;*/
+    font-family: myriad-pro;
+    display: block;
+    font-weight: normal;
+}
+
+td {
+    font-family: myriad-pro;
+    text-align: center;
+    font-size: 10pt;
+    color: black !important;
+}
+
+#form1 > div:nth-child(2) {
+    margin-left: 5em;
+    padding-top: 2em;
+}
+/*debug border on all divs*/
+div {
+    border: none;
+    /*border: 1px solid #ccc;*/
+}
+
+/* Class for clearing floats */
+.clear {
+    clear: both;
+}
+
+img {
+    /* Remove border around linked images and fix Firefox odd spaces */
+    border: 0;
+    vertical-align: middle;
+}
+
+#form1 > div:nth-child(7) > table > tbody > tr > td > table > tbody > tr > td > div > div > h3 {
+    margin-top: 1.5em;
+    margin-bottom: -1.5em;
+    font-size: 12pt;
+    padding-left: 8em;
+}
+
+#form1 > div:nth-child(6) > table > tbody > tr > td > table > tbody > tr > td {
+    padding: 2.5em 0 3em 5em;
+    border: 2px black;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#form1 > div:nth-child(7) > table > tbody > tr > td > table > tbody > tr > td > div > table,
+#form1 > div:nth-child(6) > table {
+    background: #ffffe0;
+    margin: 2.5em 0 3.5em 6em;
+}
+
+.input {
+    border: black;
+}
+
+* {
+    border: none;
+}
+
+#form1 > div:nth-child(3) {
+    margin-left: 8em;
+}
+
+/***** Links *****/
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #00704A !important;
+    font-size: 10pt !important;
+    line-height: 2.5rem !important;
+}
+
+    a:visited {
+        color: #00704A !important;
+    }
+
+    a:hover {
+        color: #7ac142 !important;
+    }
+
+#Eraug > ol > li {
+    font-size: 12pt;
+    padding: .3em 0 .15em 0;
+    font-family: myriad-pro;
+}
+
+#Eraug {
+    margin-left: 3.5em;
+    line-height: 1.5;
+}
+
+.link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#l:before, #r:before {
+    content: "";
+    width: 125px;
+    height: 250px;
+    font-family: myriad-pro !important;
+}
+
+#l:before {
+    float: right;
+}
+
+#r:before {
+    float: left;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+}
+
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+
+    .site-footer, .page-wrap:after {
+        height: 142px;
+    }
+
+#content > div > div.footer {
+    background: #00704A;
+    border-top: 8px solid #7ac142;
+    height: 15em;
+    width: 100%;
+    display: -webkit-box;
+    /*margin-top: 50px;*/
+}
+
+#content > div.footer {
+    background: #00704A;
+    border-top: 8px solid #7ac142;
+    height: 15em;
+    width: 100%;
+    /*margin-top: 4em;*/
+}
+
+    #content > div.footer > div {
+        background: #7ac142;
+    }
+
+    .footer > p,
+    #content > div.footer > p {
+        color: white;
+        padding-top: 2em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 12pt;
+        font-family: myriad-pro;
+        font-style: normal;
+    }
+
+.center-me {
+    margin: 0 auto;
+}
+
+#aspnetForm > table > tbody > tr > td > table > tbody > tr > td {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/***** Common Formatting *****/
+
+ul,
+ol {
+    margin: 0;
+    padding: 0 0 1.25em 0;
+}
+
+ul,
+ol {
+    padding: 0 0 1.25em 2.5em;
+}
+
+blockquote {
+    margin: 1.25em;
+    padding: 1.25em 1.25em 0 1.25em;
+}
+
+small {
+    font-size: 0.85em;
+}
+
+sup {
+    position: relative;
+    bottom: 0.3em;
+    vertical-align: baseline;
+}
+
+sub {
+    position: relative;
+    bottom: -0.2em;
+    vertical-align: baseline;
+}
+
+acronym,
+abbr {
+    cursor: help;
+    letter-spacing: 1px;
+    border-bottom: 1px dashed;
+}
+
+/***** Forms *****/
+
+form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+/*input,
+select,
+textarea {
+    font: 1em Arial, Helvetica, sans-serif;
+}*/
+
+textarea {
+    width: 100%;
+    line-height: 1.25;
+}
+
+label {
+    cursor: pointer;
+}
+
+/***** Tables *****/
+
+table {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+    table tr td {
+        padding: 2px;
+    }
+
+/***** Wrapper *****/
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/***** Global Classes *****/
+
+.clear {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    border-bottom: 1px solid;
+}
+
+.highlight {
+    background: #ffc;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.img-left {
+    float: left;
+    margin: 4px 10px 4px 0;
+}
+
+.img-right {
+    float: right;
+    margin: 4px 0 4px 10px;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.noindent {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nobullet {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* -- cm -- */
+a {
+    color: #00704A !important;
+}
+
+    a:visited {
+        color: #00704A !important;
+    }
+
+    a:hover {
+        color: #7ac142 !important;
+    }
+
+tbody > tr > td > table {
+    border: none;
+}
+
+#ctl00_ctl00_contentMain_contentMain_gvCourses > tbody {
+    border: none;
+}
+
+h1.myriadProBold {
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#aspnetForm > table > tbody > tr > td > table {
+    width: 100%;
+    border: none;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: left;
+}
+
+.makecenter {
+    text-align: center;
+}
+
+.alignleft,
+.alignright {
+    padding: 1em 3em 0 0;
+}
+
+#ctl00_ctl00_contentMain_contentMain_ddDepartments,
+#ctl00_ctl00_contentMain_contentMain_ddDepartments > option,
+#ctl00_ctl00_contentMain_contentMain_ddDepartments > option.btn,
+#ctl00_ctl00_contentMain_contentMain_ddSchools,
+#ctl00_ctl00_contentMain_contentMain_ddSchools > option #ctl00_ctl00_contentMain_contentMain_ddSchools > option.btn {
+    /*text-transform: lowercase;*/
+    padding-bottom: 2px;
+    background-color: transparent;
+    font-family: myriad-pro;
+    color: black;
+    /*font-weight: bold;*/
+    border: solid 2px black;
+    height: 3.5em;
+    width: 425px;
+    /*font-family: MyriadPro-Regular !important;*/
+    font-size: 12px;
+    font-style: normal;
+}
+
+/*#ctl00_ctl00_contentMain_contentMain_ddSchools > option {
+    font-family: MyriadPro-Regular !important;
+    font-size: 12px;
+    font-style: normal;
+    color: black !important;
+}*/
+
+#ctl00_ctl00_contentMain_contentMain_gvDeltaCourses > tbody > tr > th > a,
+#ctl00_ctl00_contentMain_contentMain_gvCourses > tbody > tr > th > a {
+    padding: .2em 1.2em .8em .5em;
+    text-align: center;
+    /*font-family: MyriadPro-Regular;*/
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 12px;
+    color: black !important;
+    border: none;
+}
+
+#ctl00_ctl00_contentMain_contentMain_gvDeltaCourses > tbody > tr > th,
+#ctl00_ctl00_contentMain_contentMain_gvCourses > tbody > tr > th {
+    padding: 1em 1.2em .8em 1em;
+    text-align: center;
+    /*font-family: MyriadPro-Regular;*/
+    font-size: 13.5px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 14px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #00704A;
+}
+
+#aspnetForm > table {
+    width: 100%;
+    border: none;
+}
+
+#ctl00_ctl00_contentMain_contentMain_gvDeltaCourses > tbody > tr > td,
+#ctl00_ctl00_contentMain_contentMain_gvCourses > tbody > tr > td {
+    padding: .2em 1.2em .8em .5em;
+    width: 55em;
+    border: none;
+}
+
+#ctl00_ctl00_contentMain_contentMain_gvDeltaCourses,
+#ctl00_ctl00_contentMain_contentMain_gvCourses {
+    background: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    width: 50.4em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    margin-left: 5em;
+    margin-bottom: 3rem;
+}
+
+#ctl00_ctl00_contentMain_contentMain_gvCourses {
+    margin-left: 1em;
+    width: 45em;
+}
+
+.gridViewCSS {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.course-title {
+    /*text-align: center;*/
+    font-size: 14px;
+    /*font-weight: bolder;*/
+    letter-spacing: 1px;
+    color: #00704A;
+    padding: 1em 0 .5em .75em;
+}
+
+.dbGrid-transferCourses,
+.dbGrid-deltaCourses {
+    width: 45em;
+    float: left;
+    height: auto;
+    border: none;
+    margin-left: 1em;
+}
+
+.dbGrid {
+    display: inline-flex;
+    width: auto;
+    float: left;
+    height: auto;
+    padding: 0 3em 1em 0 !important;
+    background: #E1E1E1;
+    /*margin-left: -6em;*/
+}
+
+.dbGrid-transferCourses {
+    float: left;
+    height: inherit;
+}
+
+.dbGrid-deltaCourses {
+    float: left;
+    height: inherit;
+}
+
+.dbGrid-transferCourses > div {
+    margin-left: 1em;
+}
+
+.dbGrid-deltaCourses > div {
+    padding-left: .5em;
+    padding-bottom: 1.5em;
+}
+
+#ctl00_ctl00_contentMain_contentMain_ddSchools {
+    color: black !important;
+}
+
+#aspnetForm > table > tbody > tr > td {
+    padding: 0;
+}
+
+.logo {
+    margin-left: 13.2em;
+    width: 16.8em;
+    height: 9.6em;
+    background: #00704A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-border-bottom-right-radius: 15px !important;
+    -ms-border-bottom-left-radius: 15px !important;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    /*-moz-box-shadow: 0px 0px 20px #000000;
+    -webkit-box-shadow: 0px 0px 20px #000000;
+    box-shadow: 0px 0px 20px #000000;*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00704a', endColorstr = '#3b473c');*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00704a', endColorstr = '#3b473c')";*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    /*background-image: -moz-linear-gradient(top, #00704a, #3b473c);
+    background-image: -ms-linear-gradient(top, #00704a, #3b473c);
+    background-image: -o-linear-gradient(top, #00704a, #3b473c);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#00704a), to(#3b473c));
+    background-image: -webkit-linear-gradient(top, #00704a, #3b473c);
+    background-image: linear-gradient(top, #00704a, #3b473c);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;*/
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+}
+
+/*#ctl00_ctl00_contentMain_contentMain_dbGrid {
+    width: 67%;
+}*/
+
+#content > div > div.main.myriadPro > div.title.myriadPro > p {
+    margin-left: 5em !important;
+}
+
+.btnSearch {
+    position: relative;
+    margin-top: 2em;
+    /*margin-left: 13em;*/
+    margin-bottom: 2em;
+    background: #7AC142;
+    background-color: #7AC142;
+    border: 2px solid #7AC142;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    width: 13em;
+    height: 3.75em;
+    /*font-family: myrian-pro;*/
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+    .btnSearch:hover {
+        background: #46993D;
+        background-color: #46993D;
+        border: 2px solid #46993D;
+    }
+
+#ctl00_ctl00_contentMain_contentMain_ddDepartments,
+#ctl00_ctl00_contentMain_contentMain_ddDepartments > option,
+#ctl00_ctl00_contentMain_contentMain_btnSearch,
+#content > div > div.footer > p,
+#ctl00_ctl00_contentMain_contentMain_ddSchools,
+#ctl00_ctl00_contentMain_contentMain_ddSchools > option {
+    font-family: myriad-pro;
+}
+
+@-moz-document url-prefix() {
+    #ctl00_ctl00_contentMain_contentMain_ddDepartments,
+    #ctl00_ctl00_contentMain_contentMain_ddDepartments > option,
+    #ctl00_ctl00_contentMain_contentMain_btnSearch,
+    #content > div > div.footer > p,
+    #ctl00_ctl00_contentMain_contentMain_ddSchools,
+    #ctl00_ctl00_contentMain_contentMain_ddSchools > option {
+        font-family: myriad-pro;
+    }
+}
+
+/*Use lowercase letters for the font URL. Uppercase letters can give unexpected results in IE!*/
+/* Myriad Pro Font */
+
+.myriadPro {
+    font-family: myriad-pro;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.myriadProBold {
+    font-family: myriad-pro-Bold;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.myriadProItalic {
+    font-family: myriad-pro-Italic;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.myriadProSemiBold {
+    font-family: myriad-pro-semiBold;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.TrendSlabOne {
+    /*font-family: TrendSlabOne;*/
+    font-family: TrendSlabOne-30E27A_0_0EOT;
+    /*font-weight: 400;
+    font-style: normal;*/
+    letter-spacing: -3.2px;
+    line-height: 39.5px;
+}
+
+.dbGrid,
+#ctl00_ctl00_contentMain_contentMain_dbGrid {
+    text-align: center;
+    /*display: inline-block;*/
+}
+
+div.indent {
+    clear: both;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    width: 100%;
+    margin-left: 200px;
+}
